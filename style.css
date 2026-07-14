@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1c1028,#462255,#1c1028);
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.clock-card{
+    width:100%;
+    max-width:500px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:2px solid rgb(254, 253, 253);
+    border-radius:500px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.clock-icon{
+    font-size:60px;
+    color:#ffd369;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+#greeting{
+    color:#ffd369;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.clock{
+    font-size:55px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.date{
+    font-size:18px;
+    margin-bottom:30px;
+    color:#ddd;
+}
+
+button{
+    background:#40024e;
+    color:#fff;
+    border:none;
+    padding:14px 24px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+@media(max-width:600px){
+
+.clock{
+    font-size:38px;
+}
+
+h1{
+    font-size:28px;
+}
+
+#greeting{
+    font-size:18px;
+}
+
+.clock-card{
+    padding:30px 20px;
+}
+
+}
